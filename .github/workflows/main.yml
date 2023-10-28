@@ -24,4 +24,4 @@ jobs:
       with:
         push: true
         file: ./Dockerfile
-        tags: ${{ secrets.DOCKER_USERNAME }}/movie:latest
+        tags: ${{ secrets.DOCKER_USERNAME }}/movie-check-ah:latest
