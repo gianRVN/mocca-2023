@@ -23,5 +23,5 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         push: true
-        file: ./register/Dockerfile
-        tags: ${{ secrets.DOCKER_USERNAME }}/register:latest
+        file: ./Dockerfile
+        tags: ${{ secrets.DOCKER_USERNAME }}/:latest
