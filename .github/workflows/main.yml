@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Movie Pipeline
 
 on:
   push:
@@ -19,7 +19,7 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
 
-    - name: Build and push register app
+    - name: Build and push movie app
       uses: docker/build-push-action@v3
       with:
         push: true
